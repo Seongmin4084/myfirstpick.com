@@ -1,0 +1,154 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* 섹션 1 */
+.hero {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.blue {
+    color: #4c4bb8;
+}
+
+.orange {
+    color: #e87c4c;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.highlight-orange {
+    color: #e87c4c;
+}
+
+.highlight-blue {
+    color: #4c4bb8;
+}
+
+/* 슬라이더 */
+.slider-container {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.slider-img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* 이전/다음 버튼 - 이미지 내부 배치 및 배경색 제거 */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+    background: none; /* 배경색 제거 */
+    opacity: 0.7; /* 투명도 적용 */
+}
+
+.prev:hover, .next:hover {
+    opacity: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* 슬라이드 점 */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #4c4bb8;
+}
+
+/* 예약 버튼 */
+.reservation {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.reserve-btn {
+    padding: 15px 30px;
+    background-color: #fddbc8;
+    color: black;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 80%;
+    max-width: 300px;
+}
+
+.reservation p {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 15px;
+}

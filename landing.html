@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Pick</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- 섹션 1: 타이틀 및 첫 이미지 -->
+    <section class="hero">
+        <h1><span class="blue">my first</span> <span class="orange">Pick</span></h1>
+        <img src="/Users/parkbook/Coding/다시 1 복사본/DALL·E 2025-02-20 11.14.38 - A soft sketch-style background featuring cute baby toys and plush dolls in a pastel color scheme. The design should be subtle and artistic, creating a.webp" alt="아기 인형과 장난감" class="hero-img">
+        <p>내 아이의 <span class="highlight-orange">첫 선택</span>의 순간을<br>특별하게 <span class="highlight-blue">간직</span>하세요</p>
+    </section>
+
+    <!-- 섹션 2: 반응형 슬라이더 -->
+    <section class="slider-container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slide"><img src="/Users/parkbook/Coding/다시 1 복사본/DALL·E 2025-02-20 11.14.48 - A cute teddy bear plush toy wearing a doctor's coat with a stethoscope around its neck. The bear looks professional and caring while maintaining an ad.webp" alt="의사 곰 인형" class="slider-img"></div>
+                <div class="slide"><img src="/Users/parkbook/Coding/다시 1 복사본/DALL·E 2025-02-20 11.14.49 - A cute rabbit plush toy wearing a doctor's coat with a stethoscope around its neck. The rabbit looks professional and caring while maintaining an ador.webp" alt="곰 인형과 친구들" class="slider-img"></div>
+                <div class="slide"><img src="image4.png" alt="아기 인형" class="slider-img"></div>
+                <div class="slide"><img src="image5.png" alt="토끼 인형" class="slider-img"></div>
+            </div>
+        </div>
+
+        <!-- 이전/다음 버튼 -->
+        <!-- 이전/다음 버튼 (이미지 내부 배치 & 배경 제거) -->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+
+        <!-- 슬라이드 점 -->
+        <div class="dots">
+            <span class="dot" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+            <span class="dot" onclick="setSlide(3)"></span>
+        </div>
+
+        <p class="slider-text">
+            매번 똑같은 돌잡이를<br>내 아이와 함께<br>평생 기억할 수 있는 순간으로 만드세요
+        </p>
+    </section>
+
+    <!-- 섹션 3: 예약 버튼 -->
+    <section class="reservation">
+        <button class="reserve-btn">Revervation now</button>
+        <p>프로토 타입 제작 중입니다.<br>사전 예약 부탁드립니다.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
